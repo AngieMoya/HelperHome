@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String text;
-  const PrimaryButton({super.key, required this.text});
+  final String route;
+  const PrimaryButton({super.key, required this.text, required this.route});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.pushReplacementNamed(context, route)},
       style: ElevatedButton.styleFrom(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),

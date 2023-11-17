@@ -23,7 +23,7 @@ class Login extends StatelessWidget {
             ),
             //texto
             Padding(
-                padding: const EdgeInsets.only(top: 80, bottom: 22),
+                padding: const EdgeInsets.only(top: 40, bottom: 22),
                 child: SizedBox(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,7 +62,10 @@ class Login extends StatelessWidget {
               type: TextInputType.visiblePassword,
             ),
             //button
-            const PrimaryButton(text: 'Iniciar sesión'),
+            const PrimaryButton(
+              text: 'Iniciar sesión',
+              route: '/home',
+            ),
             //texto
             Column(
               children: [

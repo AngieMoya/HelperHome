@@ -56,6 +56,7 @@ class Register extends StatelessWidget {
                 ),
                 const PrimaryButton(
                   text: 'Registrate',
+                  route: '',
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -76,10 +77,8 @@ class Register extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        onPressed: () => {
-                              Navigator.pushReplacementNamed(
-                                  context, '/register')
-                            })
+                        onPressed: () =>
+                            {Navigator.pushReplacementNamed(context, '/')})
                   ],
                 )
               ],
