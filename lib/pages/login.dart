@@ -17,7 +17,10 @@ class Login extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             //logo
-            Image.asset('assets/images/Logo.png'),
+            Padding(
+              padding: const EdgeInsets.only(top: 34),
+              child: Image.asset('assets/images/Logo.png'),
+            ),
             //texto
             Padding(
                 padding: const EdgeInsets.only(top: 80, bottom: 22),
@@ -29,7 +32,7 @@ class Login extends StatelessWidget {
                         'Inicia sesión',
                         style: TextStyle(
                           color: MyMaterialColor.myColor,
-                          fontSize: 24,
+                          fontSize: 20,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -87,7 +90,7 @@ class Login extends StatelessWidget {
                     ),
                     TextButton(
                         child: const Text(
-                          ' Registrate',
+                          'Registrate',
                           style: TextStyle(
                             color: MyMaterialColor.myColor,
                             fontSize: 14,
