@@ -9,7 +9,7 @@ class DrawerHome extends StatelessWidget {
     return Drawer(
       backgroundColor: MyMaterialColor.myColor,
       child: ListView(
-        padding: EdgeInsets.zero,
+        padding: const EdgeInsets.symmetric(vertical: 40),
         children: <Widget>[
           ListTile(
             leading: const Icon(

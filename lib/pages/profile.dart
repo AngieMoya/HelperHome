@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helperhome/widgets/drawer.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -11,7 +12,7 @@ class Profile extends StatelessWidget {
             IconButton(onPressed: () => {}, icon: const Icon(Icons.search))
           ],
         ),
-        drawer: const Drawer(),
+        drawer: const DrawerHome(),
         body: Center(
           child: SizedBox(
             child: ListView(
