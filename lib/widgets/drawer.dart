@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
 import '../theme/my_colors.dart';
 
-class DrawerHome extends StatefulWidget {
+class DrawerHome extends StatelessWidget {
   const DrawerHome({super.key});
-
-  @override
-  State<DrawerHome> createState() => _DrawerHomeState();
-}
-
-class _DrawerHomeState extends State<DrawerHome> {
-  String selectedPage = '';
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +22,7 @@ class _DrawerHomeState extends State<DrawerHome> {
               style: TextStyle(color: Colors.white, fontSize: 16),
             ),
             onTap: () {
-              setState(() {
-                selectedPage = 'Profile';
-              });
+              Navigator.pushNamed(context, '/profile');
             },
           ),
           ListTile(
@@ -41,11 +32,7 @@ class _DrawerHomeState extends State<DrawerHome> {
             ),
             title: const Text('Configuración',
                 style: TextStyle(color: Colors.white, fontSize: 16)),
-            onTap: () {
-              setState(() {
-                selectedPage = 'Config';
-              });
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: const Icon(
@@ -54,11 +41,7 @@ class _DrawerHomeState extends State<DrawerHome> {
             ),
             title: const Text('Crear publicación',
                 style: TextStyle(color: Colors.white, fontSize: 16)),
-            onTap: () {
-              setState(() {
-                selectedPage = 'Create';
-              });
-            },
+            onTap: () {},
           ),
           const Divider(
             height: 80,
@@ -74,11 +57,7 @@ class _DrawerHomeState extends State<DrawerHome> {
             ),
             title: const Text('Buscar solicitudes',
                 style: TextStyle(color: Colors.white, fontSize: 16)),
-            onTap: () {
-              setState(() {
-                selectedPage = 'Request';
-              });
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: const Icon(
@@ -87,11 +66,7 @@ class _DrawerHomeState extends State<DrawerHome> {
             ),
             title: const Text('Mis favoritos',
                 style: TextStyle(color: Colors.white, fontSize: 16)),
-            onTap: () {
-              setState(() {
-                selectedPage = 'Favorite';
-              });
-            },
+            onTap: () {},
           ),
           ListTile(
             leading: const Icon(
@@ -100,11 +75,7 @@ class _DrawerHomeState extends State<DrawerHome> {
             ),
             title: const Text('Notificaciones',
                 style: TextStyle(color: Colors.white, fontSize: 16)),
-            onTap: () {
-              setState(() {
-                selectedPage = 'Notify';
-              });
-            },
+            onTap: () {},
           ),
           const Divider(
             height: 80,
@@ -120,11 +91,7 @@ class _DrawerHomeState extends State<DrawerHome> {
             ),
             title: const Text('Cerrar sesión',
                 style: TextStyle(color: Colors.white, fontSize: 16)),
-            onTap: () {
-              setState(() {
-                selectedPage = 'Logout';
-              });
-            },
+            onTap: () {},
           ),
         ],
       ),
