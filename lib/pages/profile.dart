@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helperhome/widgets/drawer.dart';
+import 'package:helperhome/widgets/profile_header.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -16,12 +17,8 @@ class Profile extends StatelessWidget {
         body: Center(
           child: SizedBox(
             child: ListView(
-              children: [
-                Container(
-                  child: Column(
-                    children: [],
-                  ),
-                )
+              children: const [
+                ProfileHeader(),
               ],
             ),
           ),
